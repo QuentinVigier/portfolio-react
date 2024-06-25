@@ -8,7 +8,7 @@ export default function Nav() {
           <NavLink to="/skills">Mes compétences</NavLink>
         </li>
         <li>
-          <NavLink to="/contact">Me contact</NavLink>
+          <NavLink to="/contact">Me contacter</NavLink>
         </li>
       </ul>
     </nav>
