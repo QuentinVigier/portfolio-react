@@ -44,7 +44,53 @@ Ensuite, ajouter une commande à `package.json` pour générer et mettre en plac
 
 ## Étape 4
 
-Mittre en place les librairies et package nécessaires :
+Mettre en place les librairies et packages nécessaires :
 
-- `react-router-dom` pour la navigation
--
+
+### React Router DOM
+
+`react-router-dom` est taillé pour la navigation dans un interface React. Il permet de gérer les routes et les redirections.
+
+Mise en place minimal :
+
+```bash
+pnpm install react-router-dom
+# ou
+# npm install react-router-dom
+```
+
+On se rend dans le fichier `main.tsx`et on y ajoute les éléments suivants :
+
+L'importantion de `createBrowserRouter` et `RouterProvider` :
+
+```tsx
+import {
+  createBrowserRouter,
+  RouterProvider
+} from "react-router-dom";
+```
+
+Création du routeur. Rappel, le routeur est un système qui a pour objectif la gestion des accès à une application au travers des URLs.
+
+```tsx
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+  {
+    path: "/skills",
+    element: <div>Skills</div>,
+  },
+  {
+    path: "/contact",
+    element: <div>Contact</div>,
+  },
+]);
+```
+
+Suite à cela, nous pouvons créer et ajouter des liens avec le composant `NavLink` ou `Link` :
+
+```tsx
+<NavLink to="/">Accueil</NavLink>
+```
