@@ -38,8 +38,7 @@ Ensuite, ajouter une commande à `package.json` pour générer et mettre en plac
 
 ```json
 "scripts": {
-    "tailwind": "npx tailwindcss -i ./src/input.css -o ./src/styles.css --watch
-"
+  "tailwind": "npx tailwindcss -i ./src/input.css -o ./src/styles.css --watch"
 }
 ```
 
