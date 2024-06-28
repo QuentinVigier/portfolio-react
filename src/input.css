@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    font-family: "Sens", sans-serif;
+    /* @apply text-slate-50; */
+}
+

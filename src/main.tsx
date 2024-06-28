@@ -1,22 +1,26 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
+import Home from "./pages/Home.tsx";
+import Skills from "./pages/Skills.tsx";
+import Contact from "./pages/Contact.tsx";
+
 import "./styles.css";
+import 'animate.css';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // Création du router
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Home />,
   },
   {
     path: "/skills",
-    element: <div>Skills</div>,
+    element: <Skills />
   },
   {
     path: "/contact",
-    element: <div>Contact</div>,
+    element: <Contact />
   },
 ]);
 
